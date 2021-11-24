@@ -1,16 +1,47 @@
+<!--    L'applicazione web in questione si occupa di cambiare il valore di un counter attraverso
+        uno script in JavaScript, incrementandolo di 1 tramite pulsanti + e -.   -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='styles.css'/>
-    <title>Counter</title>
-</head>
-<body>
-<h1 id="counterDisplay">0</h1>
-    <button id="upButton"><center>+</center></button>
-    <button id="downButton"><center>-</center></button>
-    <script src="counter.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='css/styles.css'/> <!-- link al file css -->
+        <title>The JavaScript Counter</title>
+    </head>
+
+    <body>
+        <header id="title"> <!-- Il titolo cliccabile riporta alla repository github. -->
+            <h1><a href="https://github.com/Dinosapiens/Progetto-JavaScript-Basics-di-Lorenzo-Greco">The JavaScript Counter</a></h1>
+        </header>
+
+        <div id="box"> <!-- Contenitore di display e bottoni -->
+            <div id="topbox"> <!-- Contenitore del display -->
+                <h1 id="counterDisplay">0</h1>
+                <img id="moon" src="img/moon.png" alt="Moon">
+            </div>
+            <div id="buttons"> <!-- contenitore dei due bottoni -->
+                <button id="downButton"><center>-</center></button>
+                <button id="upButton"><center>+</center></button>
+            </div>
+        </div>
+
+        <script src="js/counter.js"></script> <!-- Il counter scritto in JavaScript -->
+    
+        <footer> <!-- Seguono nome e link social dello studente Start2Impact. -->
+            <div id="lorenzogreco">
+                <h3>Lorenzo Greco</h3>
+            </div>
+
+            <div id="ig">
+                <a href="https://www.instagram.com/lorenzgram/"><img src="img/ig.png" alt="Instagram"></a>
+            </div>
+            <div id="lin">
+                <a href="https://www.linkedin.com/in/lorenzo-greco-27628579/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            </div>
+
+        </footer>
+
+    </body>
 </html>

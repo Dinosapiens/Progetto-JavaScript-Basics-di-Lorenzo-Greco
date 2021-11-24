@@ -16,5 +16,17 @@ function subtract() {
     display.innerHTML = count;
 } //Funzione che si occupa di decrementare di 1 il valore di "count"
 
-up.addEventListener("click", add);
-down.addEventListener("click", subtract);
+
+/*  Evitiamo la comparsa di un doppio tocco su dispositivi mobili
+    a causa dell'evento click, specificando quando utilizzare il tocco
+    e quando il click, in base alla larghezza dello schermo.
+*/
+if (window.matchMedia('(max-width: 1024px)').matches) {
+    up.addEventListener("touchend", add);
+    down.addEventListener("touchend", subtract);
+}
+
+else {
+    up.addEventListener("click", add);
+    down.addEventListener("click", subtract);
+}

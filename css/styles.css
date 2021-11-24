@@ -191,3 +191,59 @@ footer {
   }
 }
 
+@media only screen and (min-width: 415px) and (max-width: 1024px){
+  
+  header {
+    margin-top: 40px;
+    width: 400px;
+  }
+  
+  #box {
+    height:600px;
+    width:400px;
+  }
+
+  #topbox {
+    padding: 3em;
+    margin: 40px;
+  }
+
+  #moon {
+    width: 400px;
+  }
+
+  #buttons{
+    margin-top: 100px;
+    margin-inline: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #box {
+    height:600px;
+    width:600px;
+  }
+
+  header{
+    padding-top: 30px;
+    width: 600px;
+  }
+
+  #topbox {
+    padding-top: 9em;
+  }
+
+  #moon {
+    width: 500px;
+
+  }
+
+  #buttons {
+    padding-top: 150px;
+    margin-inline: 10em;
+  }
+
+  footer {
+    bottom: 15px;
+    }
+}

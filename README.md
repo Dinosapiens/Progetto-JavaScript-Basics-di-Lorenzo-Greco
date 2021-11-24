@@ -35,7 +35,7 @@ represented in the center.
 
 To install and execute this application you just need a web browser.
 
-You should clone the repository and open the index.html file with your prefer browser.
+You should clone the repository and open the index.html file with your favourite browser.
 ## Demo
 
 The working web application can be found at the following link:
